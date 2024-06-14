@@ -1,0 +1,57 @@
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background-color: $secondary-color;
+    color: $white-color;
+  }
+  
+  .store {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+    gap: 20px;
+    font-weight: $font-weight-bold;
+    span:nth-of-type(1) {
+      font-size: 30px;
+    }
+    span:nth-of-type(2),
+    span:nth-of-type(3) {
+      font-size: 12px;
+    }
+    button:nth-of-type(1) {
+      @include button-style($white-color, $primary-color, 10px 40px, none);
+    }
+    button:nth-of-type(2) {
+      @include button-style($secondary-color, $white-color, 10px 40px, 1px solid $white-color);
+    }
+  }
+  
+  .division {
+    @include flex-center;
+    hr {
+      height: 1px;
+      color: $white-color;
+    }
+    span {
+      position: relative;
+      bottom: 10px;
+    }
+  }
+  
+  .banner img {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    bottom: 80px;
+  }
+  

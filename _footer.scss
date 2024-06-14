@@ -1,0 +1,42 @@
+.social {
+    @include flex-center;
+    height: 100px;
+    gap: 13px;
+  }
+  
+  .divider {
+    height: 2px;
+    background-color: $gray-color;
+    margin: 20px 0;
+    margin-left: 4%;
+    width: 92%;
+  }
+  
+  .container3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: $gray-color;
+    place-items: center;
+    font-size: 12px;
+    div {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+          list-style-type: none;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  .sticky img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
